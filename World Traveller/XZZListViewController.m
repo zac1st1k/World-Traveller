@@ -52,6 +52,13 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = sender;
+    XZZMapViewController *mapVC = segue.destinationViewController;
+    mapVC.venue = self.venues[indexPath.row];
+}
+
 #pragma mark - IBActions
 
 - (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender
@@ -95,6 +102,11 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
     cell.textLabel.text = venue.name;
     cell.detailTextLabel.text = venue.location.address;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"listToMapSegue" sender:indexPath];
 }
 
 @end

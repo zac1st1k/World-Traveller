@@ -12,5 +12,6 @@
 @interface XZZMapViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) Venue *venue;
 
 @end
