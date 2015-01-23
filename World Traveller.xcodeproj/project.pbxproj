@@ -280,9 +280,9 @@
 			children = (
 				112C919A1A71352100327007 /* AppDelegate.h */,
 				112C919B1A71352100327007 /* AppDelegate.m */,
+				112C919E1A71352100327007 /* Main.storyboard */,
 				112C919C1A71352100327007 /* XZZListViewController.h */,
 				112C919D1A71352100327007 /* XZZListViewController.m */,
-				112C919E1A71352100327007 /* Main.storyboard */,
 				112C919F1A71352100327007 /* XZZMapViewController.h */,
 				112C91A01A71352100327007 /* XZZMapViewController.m */,
 				112C91AA1A71365100327007 /* API */,

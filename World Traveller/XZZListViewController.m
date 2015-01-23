@@ -13,13 +13,15 @@
 #import "CoreData+MagicalRecord.h"
 #import "Venue.h"
 #import "Location.h"
+#import "XZZMapViewController.h"
 
 static NSString *const kCLIENTID = @"ILDHWOBLICIZAGB2IIYMMSRLVMSSFCK2Q15PQWHQSEX4QYYN";
 static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24HRN4HOSEB";
 
-@interface XZZListViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface XZZListViewController () <UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) NSArray *venues;
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -28,6 +30,12 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    self.locationManager.distanceFilter = 10.0;
+    [self.locationManager requestAlwaysAuthorization];
+    
     XZZFourSquareSessionManager *sessionManager = [XZZFourSquareSessionManager sharedClient];
     NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
     AFHTTPResponseSerializer *HTTPResponsSerializer = [AFJSONResponseSerializer serializer];
@@ -46,14 +54,25 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 
 #pragma mark - IBActions
 
-- (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender {
-    [[XZZFourSquareSessionManager sharedClient] GET:@"venues/search?ll=30.25,-97.75" parameters:@{@"client_id":kCLIENTID, @"client_secret":kCLIENTSECRET, @"v":@"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
+- (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender
+{
+    [self.locationManager startUpdatingLocation];
+}
+
+#pragma mark - CLLocation Manager Delegate
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    CLLocation *location = [locations lastObject];
+    [self.locationManager stopUpdatingLocation];
+    [[XZZFourSquareSessionManager sharedClient] GET:[NSString stringWithFormat:@"venues/search?ll=%f,%f", location.coordinate.latitude, location.coordinate.longitude] parameters:@{@"client_id":kCLIENTID, @"client_secret":kCLIENTSECRET, @"v":@"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@", responseObject);
         self.venues = responseObject;
+        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@", error);
     }];
-    [self.tableView reloadData];
+
 }
 
 #pragma mark - UITableView Delegate
