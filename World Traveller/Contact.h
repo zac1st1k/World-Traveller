@@ -1,18 +1,17 @@
 //
 //  Contact.h
-//  World Traveler
+//  World Traveller
 //
-//  Created by Zac on 22/01/2015.
+//  Created by Zac on 24/01/2015.
 //  Copyright (c) 2015 1st1k. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "XZZRecord.h"
 
 @class Venue;
 
-@interface Contact : XZZRecord
+@interface Contact : NSManagedObject
 
 @property (nonatomic, retain) NSString * formattedPhone;
 @property (nonatomic, retain) NSString * phone;
