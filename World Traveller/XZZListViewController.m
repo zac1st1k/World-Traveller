@@ -11,11 +11,15 @@
 #import "AFMMRecordResponseSerializationMapper.h"
 #import "AFMMRecordResponseSerializer.h"
 #import "CoreData+MagicalRecord.h"
+#import "Venue.h"
+#import "Location.h"
 
 static NSString *const kCLIENTID = @"ILDHWOBLICIZAGB2IIYMMSRLVMSSFCK2Q15PQWHQSEX4QYYN";
 static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24HRN4HOSEB";
 
-@interface XZZListViewController ()
+@interface XZZListViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) NSArray *venues;
 
 @end
 
@@ -31,6 +35,8 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
     [mapper registerEntityName:@"Venue" forEndpointPathComponent:@"venues/search?"];
     AFMMRecordResponseSerializer *serializer = [AFMMRecordResponseSerializer serializerWithManagedObjectContext:context responseObjectSerializer:HTTPResponsSerializer entityMapper:mapper];
     sessionManager.responseSerializer = serializer;
+    self.tableView.dataSource = self;
+    self.tableView.delegate  = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,11 +44,38 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - IBActions
+
 - (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender {
     [[XZZFourSquareSessionManager sharedClient] GET:@"venues/search?ll=30.25,-97.75" parameters:@{@"client_id":kCLIENTID, @"client_secret":kCLIENTSECRET, @"v":@"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@", responseObject);
+        self.venues = responseObject;
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@", error);
     }];
+    [self.tableView reloadData];
 }
+
+#pragma mark - UITableView Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.venues count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    Venue *venue = self.venues[indexPath.row];
+    cell.textLabel.text = venue.name;
+    cell.detailTextLabel.text = venue.location.address;
+    return cell;
+}
+
 @end
