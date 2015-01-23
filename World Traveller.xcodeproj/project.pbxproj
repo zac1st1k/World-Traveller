@@ -14,9 +14,6 @@
 		112C909F1A7134D400327007 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112C909E1A7134D400327007 /* CoreLocation.framework */; };
 		112C90A11A7134E200327007 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112C90A01A7134E200327007 /* MapKit.framework */; };
 		112C90A31A7134E900327007 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112C90A21A7134E900327007 /* CoreData.framework */; };
-		112C91471A7134FB00327007 /* AFMMRecordResponseSerializationMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90A61A7134FA00327007 /* AFMMRecordResponseSerializationMapper.m */; };
-		112C91481A7134FB00327007 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90A81A7134FA00327007 /* AFMMRecordResponseSerializer.m */; };
-		112C91491A7134FB00327007 /* AFMMRecordSessionManagerServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90AB1A7134FA00327007 /* AFMMRecordSessionManagerServer.m */; };
 		112C914A1A7134FB00327007 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90AE1A7134FA00327007 /* AFHTTPRequestOperation.m */; };
 		112C914B1A7134FB00327007 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90B01A7134FA00327007 /* AFHTTPRequestOperationManager.m */; };
 		112C914C1A7134FB00327007 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90B21A7134FA00327007 /* AFHTTPSessionManager.m */; };
@@ -77,6 +74,10 @@
 		112C91BF1A71367100327007 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B61A71367100327007 /* Menu.m */; };
 		112C91C01A71367100327007 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B81A71367100327007 /* Location.m */; };
 		112C91C11A71367100327007 /* FSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91BA1A71367100327007 /* FSCategory.m */; };
+		11E7A2861A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */; };
+		11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */; };
+		11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EC1A725EE400267E56 /* UIKit.framework */; };
+		11FB32EF1A725EED00267E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EE1A725EED00267E56 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,12 +102,6 @@
 		112C909E1A7134D400327007 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		112C90A01A7134E200327007 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		112C90A21A7134E900327007 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		112C90A51A7134FA00327007 /* AFMMRecordResponseSerializationMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializationMapper.h; sourceTree = "<group>"; };
-		112C90A61A7134FA00327007 /* AFMMRecordResponseSerializationMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializationMapper.m; sourceTree = "<group>"; };
-		112C90A71A7134FA00327007 /* AFMMRecordResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializer.h; sourceTree = "<group>"; };
-		112C90A81A7134FA00327007 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
-		112C90AA1A7134FA00327007 /* AFMMRecordSessionManagerServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordSessionManagerServer.h; sourceTree = "<group>"; };
-		112C90AB1A7134FA00327007 /* AFMMRecordSessionManagerServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordSessionManagerServer.m; sourceTree = "<group>"; };
 		112C90AD1A7134FA00327007 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		112C90AE1A7134FA00327007 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		112C90AF1A7134FA00327007 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -230,6 +225,12 @@
 		112C91B81A71367100327007 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		112C91B91A71367100327007 /* FSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCategory.h; sourceTree = "<group>"; };
 		112C91BA1A71367100327007 /* FSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCategory.m; sourceTree = "<group>"; };
+		11E7A27F1A7265A10035C979 /* AFMMRecordResponseSerializationMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializationMapper.h; sourceTree = "<group>"; };
+		11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializationMapper.m; sourceTree = "<group>"; };
+		11E7A2811A7265A10035C979 /* AFMMRecordResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializer.h; sourceTree = "<group>"; };
+		11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
+		11FB32EC1A725EE400267E56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11FB32EE1A725EED00267E56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +238,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11FB32EF1A725EED00267E56 /* Foundation.framework in Frameworks */,
+				11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */,
 				112C90A31A7134E900327007 /* CoreData.framework in Frameworks */,
 				112C90A11A7134E200327007 /* MapKit.framework in Frameworks */,
 				112C909F1A7134D400327007 /* CoreLocation.framework in Frameworks */,
@@ -321,8 +324,9 @@
 		112C909D1A7134C400327007 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				112C90A41A7134FA00327007 /* AFMMRecordResponseSerializer */,
-				112C90A91A7134FA00327007 /* AFMMRecordSessionManagerServer */,
+				11E7A27E1A7265A10035C979 /* AFMMRecordResponseSerializer */,
+				11FB32EE1A725EED00267E56 /* Foundation.framework */,
+				11FB32EC1A725EE400267E56 /* UIKit.framework */,
 				112C90AC1A7134FA00327007 /* AFNetworking */,
 				112C90C31A7134FA00327007 /* MagicalRecord */,
 				112C90FF1A7134FA00327007 /* MBProgressHUD */,
@@ -334,26 +338,6 @@
 				112C909E1A7134D400327007 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		112C90A41A7134FA00327007 /* AFMMRecordResponseSerializer */ = {
-			isa = PBXGroup;
-			children = (
-				112C90A51A7134FA00327007 /* AFMMRecordResponseSerializationMapper.h */,
-				112C90A61A7134FA00327007 /* AFMMRecordResponseSerializationMapper.m */,
-				112C90A71A7134FA00327007 /* AFMMRecordResponseSerializer.h */,
-				112C90A81A7134FA00327007 /* AFMMRecordResponseSerializer.m */,
-			);
-			path = AFMMRecordResponseSerializer;
-			sourceTree = "<group>";
-		};
-		112C90A91A7134FA00327007 /* AFMMRecordSessionManagerServer */ = {
-			isa = PBXGroup;
-			children = (
-				112C90AA1A7134FA00327007 /* AFMMRecordSessionManagerServer.h */,
-				112C90AB1A7134FA00327007 /* AFMMRecordSessionManagerServer.m */,
-			);
-			path = AFMMRecordSessionManagerServer;
 			sourceTree = "<group>";
 		};
 		112C90AC1A7134FA00327007 /* AFNetworking */ = {
@@ -567,6 +551,17 @@
 			name = API;
 			sourceTree = "<group>";
 		};
+		11E7A27E1A7265A10035C979 /* AFMMRecordResponseSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				11E7A27F1A7265A10035C979 /* AFMMRecordResponseSerializationMapper.h */,
+				11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */,
+				11E7A2811A7265A10035C979 /* AFMMRecordResponseSerializer.h */,
+				11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */,
+			);
+			path = AFMMRecordResponseSerializer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -676,13 +671,13 @@
 				112C91641A7134FB00327007 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				112C91A21A71352100327007 /* XZZListViewController.m in Sources */,
 				112C914F1A7134FB00327007 /* AFURLConnectionOperation.m in Sources */,
-				112C91481A7134FB00327007 /* AFMMRecordResponseSerializer.m in Sources */,
 				112C91BC1A71367100327007 /* XZZRecord.m in Sources */,
 				112C918E1A7134FB00327007 /* MMServer.m in Sources */,
 				112C91931A7134FB00327007 /* MMJSONServer.m in Sources */,
 				112C916B1A7134FB00327007 /* MagicalRecord+Setup.m in Sources */,
 				112C918C1A7134FB00327007 /* MMRecordRepresentation.m in Sources */,
 				112C91561A7134FB00327007 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				11E7A2861A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m in Sources */,
 				112C91831A7134FB00327007 /* MBProgressHUD.m in Sources */,
 				112C91621A7134FB00327007 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				112C91911A7134FB00327007 /* MMRecordDynamicMarshaler.m in Sources */,
@@ -695,6 +690,7 @@
 				112C91691A7134FB00327007 /* MagicalRecord+iCloud.m in Sources */,
 				112C91501A7134FB00327007 /* AFURLRequestSerialization.m in Sources */,
 				112C91611A7134FB00327007 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */,
 				112C91581A7134FB00327007 /* NSObject+MagicalDataImport.m in Sources */,
 				112C915F1A7134FB00327007 /* NSManagedObject+MagicalRequests.m in Sources */,
 				112C914E1A7134FB00327007 /* AFSecurityPolicy.m in Sources */,
@@ -707,7 +703,6 @@
 				112C91631A7134FB00327007 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				112C91881A7134FB00327007 /* MMRecordCache.m in Sources */,
 				112C91681A7134FB00327007 /* MagicalRecord+ErrorHandling.m in Sources */,
-				112C91491A7134FB00327007 /* AFMMRecordSessionManagerServer.m in Sources */,
 				112C915E1A7134FB00327007 /* NSManagedObject+MagicalRecord.m in Sources */,
 				112C918D1A7134FB00327007 /* MMRecordResponse.m in Sources */,
 				112C91551A7134FB00327007 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -716,7 +711,6 @@
 				112C91871A7134FB00327007 /* MMRecord.m in Sources */,
 				112C91BE1A71367100327007 /* Contact.m in Sources */,
 				112C91A11A71352100327007 /* AppDelegate.m in Sources */,
-				112C91471A7134FB00327007 /* AFMMRecordResponseSerializationMapper.m in Sources */,
 				112C916D1A7134FB00327007 /* MagicalRecord.m in Sources */,
 				112C91AD1A71366000327007 /* XZZFourSquareSessionManager.m in Sources */,
 				112C91671A7134FB00327007 /* MagicalRecord+Actions.m in Sources */,
@@ -918,6 +912,7 @@
 				112C90991A7134AE00327007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		112C909A1A7134AE00327007 /* Build configuration list for PBXNativeTarget "World TravellerTests" */ = {
 			isa = XCConfigurationList;
@@ -926,6 +921,7 @@
 				112C909C1A7134AE00327007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -28,7 +28,7 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
     NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
     AFHTTPResponseSerializer *HTTPResponsSerializer = [AFJSONResponseSerializer serializer];
     AFMMRecordResponseSerializationMapper *mapper = [[AFMMRecordResponseSerializationMapper alloc] init];
-    [mapper registerEntityName:@"Venue" forEndpointPathComponent:@"venuews/search?"];
+    [mapper registerEntityName:@"Venue" forEndpointPathComponent:@"venues/search?"];
     AFMMRecordResponseSerializer *serializer = [AFMMRecordResponseSerializer serializerWithManagedObjectContext:context responseObjectSerializer:HTTPResponsSerializer entityMapper:mapper];
     sessionManager.responseSerializer = serializer;
 }

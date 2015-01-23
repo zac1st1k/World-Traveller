@@ -10,7 +10,7 @@
 
 @implementation XZZRecord
 
-+ (NSString *)keyPathForMetaData
++ (NSString *)keyPathForResponseObject
 {
     return @"response";
 }

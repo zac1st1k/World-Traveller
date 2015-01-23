@@ -8,13 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "XZZRecord.h"
 
-@class Venue;
-
-@interface Menu : NSManagedObject
+@interface Menu : XZZRecord
 
 @property (nonatomic, retain) NSString * label;
 @property (nonatomic, retain) NSString * url;
-@property (nonatomic, retain) Venue *venue;
+@property (nonatomic, retain) NSManagedObjectContext *venue;
 
 @end

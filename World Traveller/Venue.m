@@ -7,6 +7,9 @@
 //
 
 #import "Venue.h"
+#import "Contact.h"
+#import "FSCategory.h"
+#import "Menu.h"
 #import "Location.h"
 
 
