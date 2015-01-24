@@ -172,6 +172,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="directionsMapVIew" destination="hXl-Xw-QLq" id="iyj-AI-4kD"/>
+                        <outlet property="listDirectionsBarButtonItem" destination="ufE-zs-g51" id="0IZ-0N-g08"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZc-Ig-v0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,6 +13,7 @@
 
 @interface XZZDirectionsViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *listDirectionsBarButtonItem;
 @property (strong, nonatomic) IBOutlet MKMapView *directionsMapVIew;
 @property (strong, nonatomic) Venue *venue;
 @property (strong, nonatomic) CLLocationManager *locationManager;
