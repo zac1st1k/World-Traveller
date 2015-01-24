@@ -11,8 +11,10 @@
 @interface XZZListViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *menuBarButtonItem;
 
 - (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender;
+- (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender;
 
 @end
 

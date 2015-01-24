@@ -53,6 +53,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="79N-ah-eYQ">
+                        <barButtonItem key="leftBarButtonItem" title="≣" id="WJK-V9-pM7">
+                            <connections>
+                                <action selector="menuBarButtonItemPressed:" destination="BYZ-38-t0r" id="8T1-pN-Dtu"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uiG-xH-NFb">
                             <connections>
                                 <action selector="refreshBarButtonItemPressed:" destination="BYZ-38-t0r" id="G6x-7s-8pZ"/>
@@ -60,6 +65,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuBarButtonItem" destination="WJK-V9-pM7" id="PKK-yO-K2W"/>
                         <outlet property="tableView" destination="75b-ri-jFC" id="Uui-Xl-YuN"/>
                         <segue destination="t39-aj-DNK" kind="push" identifier="listToMapSegue" id="K9w-Qh-FX9"/>
                     </connections>
@@ -84,11 +90,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LW0-89-JOa">
-                                <rect key="frame" x="0.0" y="520" width="600" height="60"/>
+                                <rect key="frame" x="0.0" y="510" width="600" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVP-YQ-vMR">
-                                        <rect key="frame" x="20" y="10" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="20" y="10" width="42" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -112,7 +118,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xhF-ZS-Io7" firstAttribute="top" secondItem="lBf-cr-Rn1" secondAttribute="top" id="HIc-wf-ZGD"/>
-                            <constraint firstItem="8TZ-QO-xoE" firstAttribute="top" secondItem="LW0-89-JOa" secondAttribute="bottom" constant="20" id="LLb-dq-hIE"/>
+                            <constraint firstItem="8TZ-QO-xoE" firstAttribute="top" secondItem="LW0-89-JOa" secondAttribute="bottom" constant="30" id="LLb-dq-hIE"/>
                             <constraint firstItem="xhF-ZS-Io7" firstAttribute="trailing" secondItem="lBf-cr-Rn1" secondAttribute="trailing" id="SMp-cx-kDz"/>
                             <constraint firstItem="LW0-89-JOa" firstAttribute="leading" secondItem="lBf-cr-Rn1" secondAttribute="leading" id="SV2-fV-gm4"/>
                             <constraint firstItem="xhF-ZS-Io7" firstAttribute="leading" secondItem="lBf-cr-Rn1" secondAttribute="leading" id="UPf-rO-5v1"/>

@@ -15,4 +15,5 @@
     #import "CoreData+MagicalRecord.h"
     #import "AFNetworking.h"
     #import "UIViewController+MMDrawerController.h"
+    #import "MMDrawerVisualState.h"
 #endif

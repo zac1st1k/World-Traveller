@@ -14,6 +14,7 @@
 #import "Venue.h"
 #import "Location.h"
 #import "XZZMapViewController.h"
+#import "AppDelegate.h"
 
 #define latitudeOffset 0.01
 #define longitudeOffset 0.01
@@ -33,6 +34,10 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.menuBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                        [UIFont fontWithName:@"Helvetica-Bold" size:25.0], NSFontAttributeName,
+                                        nil]
+                              forState:UIControlStateNormal];
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
@@ -67,6 +72,10 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 - (IBAction)refreshBarButtonItemPressed:(UIBarButtonItem *)sender
 {
     [self.locationManager startUpdatingLocation];
+}
+
+- (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender {
+    [[self drawerControllerFromAppDelegate] toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 #pragma mark - CLLocation Manager Delegate
@@ -110,6 +119,14 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"listToMapSegue" sender:indexPath];
+}
+
+#pragma mark - Drawer Controller
+
+- (MMDrawerController *)drawerControllerFromAppDelegate
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.drawerController;
 }
 
 @end
