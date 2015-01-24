@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "XZZRecord.h"
 
 @class Venue;
 
-@interface FSCategory : NSManagedObject
+@interface FSCategory : XZZRecord
 
 @property (nonatomic, retain) NSString * id;
 @property (nonatomic, retain) NSString * name;

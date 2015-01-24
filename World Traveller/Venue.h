@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "XZZRecord.h"
 
 @class Contact, FSCategory, Location, Menu;
 
-@interface Venue : NSManagedObject
+@interface Venue : XZZRecord
 
 @property (nonatomic, retain) NSString * id;
 @property (nonatomic, retain) NSString * name;
@@ -19,5 +20,7 @@
 @property (nonatomic, retain) Contact *contact;
 @property (nonatomic, retain) Location *location;
 @property (nonatomic, retain) Menu *menu;
+
++ (NSString *)keyPathForResponseObject;
 
 @end

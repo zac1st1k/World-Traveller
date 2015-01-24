@@ -22,4 +22,9 @@
 @dynamic location;
 @dynamic menu;
 
++ (NSString *)keyPathForResponseObject
+{
+    return @"response.venues";
+}
+
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111DF80D1A728BF400F184F6 /* FSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF80C1A728BF400F184F6 /* FSCategory.m */; };
+		111DF8101A728BF400F184F6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF80F1A728BF400F184F6 /* Contact.m */; };
+		111DF8131A728BF400F184F6 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8121A728BF400F184F6 /* Location.m */; };
+		111DF8161A728BF400F184F6 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8151A728BF400F184F6 /* Menu.m */; };
+		111DF8191A728BF500F184F6 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8181A728BF500F184F6 /* Venue.m */; };
+		111DF81C1A7299EF00F184F6 /* XZZDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */; };
 		112C90771A7134AE00327007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90761A7134AE00327007 /* main.m */; };
 		112C90851A7134AE00327007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C90841A7134AE00327007 /* Images.xcassets */; };
 		112C90881A7134AE00327007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112C90861A7134AE00327007 /* LaunchScreen.xib */; };
@@ -69,11 +75,6 @@
 		112C91AD1A71366000327007 /* XZZFourSquareSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91AC1A71366000327007 /* XZZFourSquareSessionManager.m */; };
 		112C91BB1A71367100327007 /* WorldTravellerModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 112C91AE1A71367100327007 /* WorldTravellerModel.xcdatamodel */; };
 		112C91BC1A71367100327007 /* XZZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B01A71367100327007 /* XZZRecord.m */; };
-		112C91BD1A71367100327007 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B21A71367100327007 /* Venue.m */; };
-		112C91BE1A71367100327007 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B41A71367100327007 /* Contact.m */; };
-		112C91BF1A71367100327007 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B61A71367100327007 /* Menu.m */; };
-		112C91C01A71367100327007 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B81A71367100327007 /* Location.m */; };
-		112C91C11A71367100327007 /* FSCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91BA1A71367100327007 /* FSCategory.m */; };
 		11E7A2861A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */; };
 		11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */; };
 		11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EC1A725EE400267E56 /* UIKit.framework */; };
@@ -91,6 +92,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111DF80B1A728BF400F184F6 /* FSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCategory.h; sourceTree = "<group>"; };
+		111DF80C1A728BF400F184F6 /* FSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCategory.m; sourceTree = "<group>"; };
+		111DF80E1A728BF400F184F6 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		111DF80F1A728BF400F184F6 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		111DF8111A728BF400F184F6 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		111DF8121A728BF400F184F6 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		111DF8141A728BF400F184F6 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		111DF8151A728BF400F184F6 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		111DF8171A728BF500F184F6 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		111DF8181A728BF500F184F6 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		111DF81A1A7299EF00F184F6 /* XZZDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZDirectionsViewController.h; sourceTree = "<group>"; };
+		111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZDirectionsViewController.m; sourceTree = "<group>"; };
 		112C90711A7134AE00327007 /* World Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Traveller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		112C90751A7134AE00327007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112C90761A7134AE00327007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -215,16 +228,6 @@
 		112C91AE1A71367100327007 /* WorldTravellerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldTravellerModel.xcdatamodel; sourceTree = "<group>"; };
 		112C91AF1A71367100327007 /* XZZRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZRecord.h; sourceTree = "<group>"; };
 		112C91B01A71367100327007 /* XZZRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZRecord.m; sourceTree = "<group>"; };
-		112C91B11A71367100327007 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
-		112C91B21A71367100327007 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
-		112C91B31A71367100327007 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
-		112C91B41A71367100327007 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		112C91B51A71367100327007 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
-		112C91B61A71367100327007 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
-		112C91B71A71367100327007 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		112C91B81A71367100327007 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		112C91B91A71367100327007 /* FSCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCategory.h; sourceTree = "<group>"; };
-		112C91BA1A71367100327007 /* FSCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCategory.m; sourceTree = "<group>"; };
 		11E7A27F1A7265A10035C979 /* AFMMRecordResponseSerializationMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializationMapper.h; sourceTree = "<group>"; };
 		11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializationMapper.m; sourceTree = "<group>"; };
 		11E7A2811A7265A10035C979 /* AFMMRecordResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializer.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				112C919D1A71352100327007 /* XZZListViewController.m */,
 				112C919F1A71352100327007 /* XZZMapViewController.h */,
 				112C91A01A71352100327007 /* XZZMapViewController.m */,
+				111DF81A1A7299EF00F184F6 /* XZZDirectionsViewController.h */,
+				111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */,
 				112C91AA1A71365100327007 /* API */,
 				112C91A81A71364900327007 /* Model */,
 				112C90841A7134AE00327007 /* Images.xcassets */,
@@ -526,18 +531,18 @@
 			isa = PBXGroup;
 			children = (
 				112C91AE1A71367100327007 /* WorldTravellerModel.xcdatamodel */,
+				111DF8171A728BF500F184F6 /* Venue.h */,
+				111DF8181A728BF500F184F6 /* Venue.m */,
+				111DF8141A728BF400F184F6 /* Menu.h */,
+				111DF8151A728BF400F184F6 /* Menu.m */,
+				111DF8111A728BF400F184F6 /* Location.h */,
+				111DF8121A728BF400F184F6 /* Location.m */,
+				111DF80E1A728BF400F184F6 /* Contact.h */,
+				111DF80F1A728BF400F184F6 /* Contact.m */,
+				111DF80B1A728BF400F184F6 /* FSCategory.h */,
+				111DF80C1A728BF400F184F6 /* FSCategory.m */,
 				112C91AF1A71367100327007 /* XZZRecord.h */,
 				112C91B01A71367100327007 /* XZZRecord.m */,
-				112C91B11A71367100327007 /* Venue.h */,
-				112C91B21A71367100327007 /* Venue.m */,
-				112C91B31A71367100327007 /* Contact.h */,
-				112C91B41A71367100327007 /* Contact.m */,
-				112C91B51A71367100327007 /* Menu.h */,
-				112C91B61A71367100327007 /* Menu.m */,
-				112C91B71A71367100327007 /* Location.h */,
-				112C91B81A71367100327007 /* Location.m */,
-				112C91B91A71367100327007 /* FSCategory.h */,
-				112C91BA1A71367100327007 /* FSCategory.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -662,12 +667,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				112C91BF1A71367100327007 /* Menu.m in Sources */,
 				112C918B1A7134FB00327007 /* MMRecordProtoRecord.m in Sources */,
-				112C91C11A71367100327007 /* FSCategory.m in Sources */,
 				112C91591A7134FB00327007 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				112C91921A7134FB00327007 /* MMRecordDynamicRepresentation.m in Sources */,
-				112C91C01A71367100327007 /* Location.m in Sources */,
 				112C91641A7134FB00327007 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				112C91A21A71352100327007 /* XZZListViewController.m in Sources */,
 				112C914F1A7134FB00327007 /* AFURLConnectionOperation.m in Sources */,
@@ -691,12 +693,13 @@
 				112C91501A7134FB00327007 /* AFURLRequestSerialization.m in Sources */,
 				112C91611A7134FB00327007 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */,
+				111DF8101A728BF400F184F6 /* Contact.m in Sources */,
 				112C91581A7134FB00327007 /* NSObject+MagicalDataImport.m in Sources */,
 				112C915F1A7134FB00327007 /* NSManagedObject+MagicalRequests.m in Sources */,
 				112C914E1A7134FB00327007 /* AFSecurityPolicy.m in Sources */,
 				112C914A1A7134FB00327007 /* AFHTTPRequestOperation.m in Sources */,
+				111DF81C1A7299EF00F184F6 /* XZZDirectionsViewController.m in Sources */,
 				112C91521A7134FB00327007 /* AFURLSessionManager.m in Sources */,
-				112C91BD1A71367100327007 /* Venue.m in Sources */,
 				112C91A41A71352100327007 /* XZZMapViewController.m in Sources */,
 				112C916A1A7134FB00327007 /* MagicalRecord+Options.m in Sources */,
 				112C91661A7134FB00327007 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -709,8 +712,9 @@
 				112C91BB1A71367100327007 /* WorldTravellerModel.xcdatamodel in Sources */,
 				112C914C1A7134FB00327007 /* AFHTTPSessionManager.m in Sources */,
 				112C91871A7134FB00327007 /* MMRecord.m in Sources */,
-				112C91BE1A71367100327007 /* Contact.m in Sources */,
 				112C91A11A71352100327007 /* AppDelegate.m in Sources */,
+				111DF80D1A728BF400F184F6 /* FSCategory.m in Sources */,
+				111DF8131A728BF400F184F6 /* Location.m in Sources */,
 				112C916D1A7134FB00327007 /* MagicalRecord.m in Sources */,
 				112C91AD1A71366000327007 /* XZZFourSquareSessionManager.m in Sources */,
 				112C91671A7134FB00327007 /* MagicalRecord+Actions.m in Sources */,
@@ -721,7 +725,9 @@
 				112C918A1A7134FB00327007 /* MMRecordMarshaler.m in Sources */,
 				112C91891A7134FB00327007 /* MMRecordDebugger.m in Sources */,
 				112C91541A7134FB00327007 /* MagicalImportFunctions.m in Sources */,
+				111DF8161A728BF400F184F6 /* Menu.m in Sources */,
 				112C918F1A7134FB00327007 /* MMServerPageManager.m in Sources */,
+				111DF8191A728BF500F184F6 /* Venue.m in Sources */,
 				112C915D1A7134FB00327007 /* NSManagedObject+MagicalFinders.m in Sources */,
 				112C915C1A7134FB00327007 /* NSManagedObject+MagicalDataImport.m in Sources */,
 			);
