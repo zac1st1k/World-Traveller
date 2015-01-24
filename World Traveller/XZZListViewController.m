@@ -15,6 +15,9 @@
 #import "Location.h"
 #import "XZZMapViewController.h"
 
+#define latitudeOffset 0.01
+#define longitudeOffset 0.01
+
 static NSString *const kCLIENTID = @"ILDHWOBLICIZAGB2IIYMMSRLVMSSFCK2Q15PQWHQSEX4QYYN";
 static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24HRN4HOSEB";
 
@@ -72,7 +75,7 @@ static NSString *const kCLIENTSECRET = @"0B33HRK4NKSSLGBRQKDQYYQERFGLGAQSBF3BB24
 {
     CLLocation *location = [locations lastObject];
     [self.locationManager stopUpdatingLocation];
-    [[XZZFourSquareSessionManager sharedClient] GET:[NSString stringWithFormat:@"venues/search?ll=%f,%f", location.coordinate.latitude, location.coordinate.longitude] parameters:@{@"client_id":kCLIENTID, @"client_secret":kCLIENTSECRET, @"v":@"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
+    [[XZZFourSquareSessionManager sharedClient] GET:[NSString stringWithFormat:@"venues/search?ll=%f,%f", location.coordinate.latitude + latitudeOffset, location.coordinate.longitude + longitudeOffset] parameters:@{@"client_id":kCLIENTID, @"client_secret":kCLIENTSECRET, @"v":@"20140416"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@", responseObject);
         self.venues = responseObject;
         [self.tableView reloadData];
