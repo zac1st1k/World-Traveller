@@ -11,7 +11,6 @@
 		111DF8101A728BF400F184F6 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF80F1A728BF400F184F6 /* Contact.m */; };
 		111DF8131A728BF400F184F6 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8121A728BF400F184F6 /* Location.m */; };
 		111DF8161A728BF400F184F6 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8151A728BF400F184F6 /* Menu.m */; };
-		111DF8191A728BF500F184F6 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8181A728BF500F184F6 /* Venue.m */; };
 		111DF81C1A7299EF00F184F6 /* XZZDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */; };
 		111DF8221A73D0C600F184F6 /* XZZDirectionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8211A73D0C600F184F6 /* XZZDirectionsListViewController.m */; };
 		112C90771A7134AE00327007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90761A7134AE00327007 /* main.m */; };
@@ -79,6 +78,7 @@
 		11E7A2861A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */; };
 		11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */; };
 		11F974CB1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F974CA1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m */; };
+		11F974CE1A741A52004B37F5 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F974CD1A741A52004B37F5 /* Venue.m */; };
 		11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EC1A725EE400267E56 /* UIKit.framework */; };
 		11FB32EF1A725EED00267E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EE1A725EED00267E56 /* Foundation.framework */; };
 		11FFBF1E1A73E44E00EE1DCB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF161A73E44E00EE1DCB /* MMDrawerBarButtonItem.m */; };
@@ -108,8 +108,6 @@
 		111DF8121A728BF400F184F6 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		111DF8141A728BF400F184F6 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		111DF8151A728BF400F184F6 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
-		111DF8171A728BF500F184F6 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
-		111DF8181A728BF500F184F6 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		111DF81A1A7299EF00F184F6 /* XZZDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZDirectionsViewController.h; sourceTree = "<group>"; };
 		111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZDirectionsViewController.m; sourceTree = "<group>"; };
 		111DF8201A73D0C600F184F6 /* XZZDirectionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZDirectionsListViewController.h; sourceTree = "<group>"; };
@@ -244,6 +242,8 @@
 		11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
 		11F974C91A7411FE004B37F5 /* XZZFavouriteVenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZFavouriteVenuesViewController.h; sourceTree = "<group>"; };
 		11F974CA1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZFavouriteVenuesViewController.m; sourceTree = "<group>"; };
+		11F974CC1A741A52004B37F5 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		11F974CD1A741A52004B37F5 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		11FB32EC1A725EE400267E56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11FB32EE1A725EED00267E56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11FFBF151A73E44E00EE1DCB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
@@ -565,8 +565,8 @@
 			isa = PBXGroup;
 			children = (
 				112C91AE1A71367100327007 /* WorldTravellerModel.xcdatamodel */,
-				111DF8171A728BF500F184F6 /* Venue.h */,
-				111DF8181A728BF500F184F6 /* Venue.m */,
+				11F974CC1A741A52004B37F5 /* Venue.h */,
+				11F974CD1A741A52004B37F5 /* Venue.m */,
 				111DF8141A728BF400F184F6 /* Menu.h */,
 				111DF8151A728BF400F184F6 /* Menu.m */,
 				111DF8111A728BF400F184F6 /* Location.h */,
@@ -738,6 +738,7 @@
 				112C91571A7134FB00327007 /* NSNumber+MagicalDataImport.m in Sources */,
 				112C91511A7134FB00327007 /* AFURLResponseSerialization.m in Sources */,
 				112C91651A7134FB00327007 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				11F974CE1A741A52004B37F5 /* Venue.m in Sources */,
 				112C915B1A7134FB00327007 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				112C91691A7134FB00327007 /* MagicalRecord+iCloud.m in Sources */,
 				112C91501A7134FB00327007 /* AFURLRequestSerialization.m in Sources */,
@@ -785,7 +786,6 @@
 				112C91541A7134FB00327007 /* MagicalImportFunctions.m in Sources */,
 				111DF8161A728BF400F184F6 /* Menu.m in Sources */,
 				112C918F1A7134FB00327007 /* MMServerPageManager.m in Sources */,
-				111DF8191A728BF500F184F6 /* Venue.m in Sources */,
 				112C915D1A7134FB00327007 /* NSManagedObject+MagicalFinders.m in Sources */,
 				112C915C1A7134FB00327007 /* NSManagedObject+MagicalDataImport.m in Sources */,
 			);

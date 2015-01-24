@@ -2,7 +2,7 @@
 //  Venue.h
 //  World Traveller
 //
-//  Created by Zac on 24/01/2015.
+//  Created by Zac on 25/01/2015.
 //  Copyright (c) 2015 1st1k. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 
 @property (nonatomic, retain) NSString * id;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSNumber * favourite;
 @property (nonatomic, retain) FSCategory *categories;
 @property (nonatomic, retain) Contact *contact;
 @property (nonatomic, retain) Location *location;

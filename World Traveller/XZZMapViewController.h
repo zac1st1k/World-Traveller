@@ -16,6 +16,8 @@
 @property (strong, nonatomic) Venue *venue;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *addressLabel;
+@property (strong, nonatomic) IBOutlet UILabel *starLabel;
 - (IBAction)showDirectionsBarButtonItemPressed:(UIBarButtonItem *)sender;
+- (IBAction)favouriteButtonPressed:(UIButton *)sender;
 
 @end

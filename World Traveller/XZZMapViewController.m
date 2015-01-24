@@ -56,4 +56,11 @@
 - (IBAction)showDirectionsBarButtonItemPressed:(UIBarButtonItem *)sender {
     [self performSegueWithIdentifier:@"mapToDirectionsSegue" sender:nil];
 }
+
+- (IBAction)favouriteButtonPressed:(UIButton *)sender {
+    self.venue.favourite = [NSNumber numberWithBool:YES];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveOnlySelfWithCompletion:^(BOOL success, NSError *error) {
+        self.starLabel.text = @"★";
+    }];
+}
 @end

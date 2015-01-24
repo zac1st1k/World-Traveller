@@ -8,8 +8,11 @@
 
 #import "XZZFavouriteVenuesViewController.h"
 #import "AppDelegate.h"
+#import "Venue.h"
 
 @interface XZZFavouriteVenuesViewController ()
+
+@property (strong, nonatomic) NSMutableArray *favourites;
 
 @end
 
@@ -19,6 +22,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.menuBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"Helvetica-Bold" size:25.0], NSFontAttributeName, nil] forState:UIControlStateNormal];
+    if (!self.favourites) {
+        self.favourites = [[NSMutableArray alloc] init];
+    }
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSPredicate *predicateForFavourites = [NSPredicate predicateWithFormat:@"favourite == %@", [NSNumber numberWithBool:YES]];
+    self.favourites = [[Venue MR_findAllWithPredicate:predicateForFavourites] mutableCopy];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +53,21 @@
 
 - (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender {
     [[self drawerControllerFromAppDelegate] toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+#pragma mark - Table View Data Source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.favourites count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    Venue *venue = self.favourites[indexPath.row];
+    cell.textLabel.text = venue.name;
+    return cell;
 }
 
 #pragma mark - Drawer Controller

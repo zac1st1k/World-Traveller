@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZZFavouriteVenuesViewController : UIViewController
+@interface XZZFavouriteVenuesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuBarButtonItem;

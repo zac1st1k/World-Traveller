@@ -2,7 +2,7 @@
 //  Venue.m
 //  World Traveller
 //
-//  Created by Zac on 24/01/2015.
+//  Created by Zac on 25/01/2015.
 //  Copyright (c) 2015 1st1k. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 
 @dynamic id;
 @dynamic name;
+@dynamic favourite;
 @dynamic categories;
 @dynamic contact;
 @dynamic location;

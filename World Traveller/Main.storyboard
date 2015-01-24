@@ -94,26 +94,52 @@
                                 <rect key="frame" x="0.0" y="510" width="600" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVP-YQ-vMR">
-                                        <rect key="frame" x="20" y="10" width="42" height="20"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <rect key="frame" x="20" y="10" width="34.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-0h-UuC">
-                                        <rect key="frame" x="20" y="29.5" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="20" y="32.5" width="35.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSn-fB-5Sh">
+                                        <rect key="frame" x="472" y="25.5" width="108" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Add to Favourite">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favouriteButtonPressed:" destination="t39-aj-DNK" eventType="touchUpInside" id="CPu-pa-W8I"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8n-Sg-ecf">
+                                        <rect key="frame" x="518" y="10" width="17" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="YZ4-0h-UuC" firstAttribute="top" secondItem="SSn-fB-5Sh" secondAttribute="top" constant="7" id="6EI-b4-ffo"/>
                                     <constraint firstItem="kVP-YQ-vMR" firstAttribute="leading" secondItem="LW0-89-JOa" secondAttribute="leading" constant="20" id="6gs-rN-9Sf"/>
                                     <constraint firstAttribute="height" constant="60" id="7gO-Xt-YHW"/>
-                                    <constraint firstAttribute="bottom" secondItem="YZ4-0h-UuC" secondAttribute="bottom" constant="10" id="Y79-Yf-Or4"/>
+                                    <constraint firstAttribute="trailing" secondItem="SSn-fB-5Sh" secondAttribute="trailing" constant="20" id="95n-Zz-gkd"/>
+                                    <constraint firstItem="YZ4-0h-UuC" firstAttribute="bottom" secondItem="LW0-89-JOa" secondAttribute="bottom" constant="-10" id="Y79-Yf-Or4"/>
+                                    <constraint firstAttribute="trailing" secondItem="f8n-Sg-ecf" secondAttribute="trailing" constant="65" id="ZIz-XV-qQp"/>
                                     <constraint firstItem="kVP-YQ-vMR" firstAttribute="top" secondItem="LW0-89-JOa" secondAttribute="top" constant="10" id="hZo-aK-fyy"/>
+                                    <constraint firstItem="f8n-Sg-ecf" firstAttribute="top" secondItem="LW0-89-JOa" secondAttribute="top" constant="10" id="ksd-96-H4G"/>
                                     <constraint firstItem="YZ4-0h-UuC" firstAttribute="leading" secondItem="LW0-89-JOa" secondAttribute="leading" constant="20" id="llb-G1-XPj"/>
+                                    <constraint firstItem="f8n-Sg-ecf" firstAttribute="bottom" secondItem="SSn-fB-5Sh" secondAttribute="top" id="qtO-Ks-l9J"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qtO-Ks-l9J"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,6 +164,7 @@
                         <outlet property="addressLabel" destination="YZ4-0h-UuC" id="euI-GT-NGV"/>
                         <outlet property="mapView" destination="xhF-ZS-Io7" id="G1r-j2-TDU"/>
                         <outlet property="nameLabel" destination="kVP-YQ-vMR" id="nNX-XU-pxy"/>
+                        <outlet property="starLabel" destination="f8n-Sg-ecf" id="cqw-Je-Zg9"/>
                         <segue destination="jQU-Kt-dOG" kind="push" identifier="mapToDirectionsSegue" id="zho-zq-Hqb"/>
                     </connections>
                 </viewController>
