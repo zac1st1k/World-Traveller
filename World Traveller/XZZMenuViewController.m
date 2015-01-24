@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) NSMutableArray *viewControllers;
 @property (strong, nonatomic) UINavigationController *listNavigationController;
+@property (strong, nonatomic) UINavigationController *favouriteVenuewsNavigationViewController;
+@property (strong, nonatomic) UINavigationController *addVenueNavigationViewController;
 
 @end
 
@@ -31,11 +33,21 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     if (!self.listNavigationController) {
         MMDrawerController *drawerController = [self drawerControllerFromAppDelegate];
         self.listNavigationController = (UINavigationController *)drawerController.centerViewController;
         [self.viewControllers addObject:self.listNavigationController];
     }
+    if (!self.favouriteVenuewsNavigationViewController) {
+        self.favouriteVenuewsNavigationViewController = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"XZZFavouriteVenuesViewControllerID"];
+        [self.viewControllers addObject:self.favouriteVenuewsNavigationViewController];
+    }
+    if (!self.addVenueNavigationViewController) {
+        self.addVenueNavigationViewController = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"XZZAddVenueViewControllerID"];
+        [self.viewControllers addObject:self.addVenueNavigationViewController];
+    }
+    
     [self.tableView reloadData];
 }
 
@@ -66,6 +78,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     if (indexPath.row == 0) {
         cell.textLabel.text = @"Home";
+    }
+    else if (indexPath.row == 1) {
+        cell.textLabel.text = @"Favourites";
+    }
+    else if (indexPath.row == 2) {
+        cell.textLabel.text = @"Add Venue";
     }
     return cell;
 }

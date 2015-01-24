@@ -11,5 +11,6 @@
 @interface XZZFavouriteVenuesViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *menuBarButtonItem;
 
 @end

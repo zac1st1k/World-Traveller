@@ -7,6 +7,7 @@
 //
 
 #import "XZZAddVenueViewController.h"
+#include "AppDelegate.h"
 
 @interface XZZAddVenueViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.menuBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"Helvetica-Bold" size:25.0], NSFontAttributeName, nil] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,4 +38,18 @@
 
 - (IBAction)saveBarButtonItemPressed:(UIBarButtonItem *)sender {
 }
+
+- (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender {
+    [[self drawerControllerFromAppDelegate] toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    
+}
+
+#pragma mark - Drawer Controller
+
+- (MMDrawerController *)drawerControllerFromAppDelegate
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.drawerController;
+}
+
 @end

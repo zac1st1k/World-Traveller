@@ -307,7 +307,7 @@
         <!--Favourite Venues View Controller-->
         <scene sceneID="1p4-0S-DSV">
             <objects>
-                <viewController storyboardIdentifier="I" id="hqH-oV-rrb" customClass="XZZFavouriteVenuesViewController" sceneMemberID="viewController">
+                <viewController id="hqH-oV-rrb" customClass="XZZFavouriteVenuesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UhJ-MX-w2E"/>
                         <viewControllerLayoutGuide type="bottom" id="KaN-oc-p4M"/>
@@ -338,8 +338,15 @@
                             <constraint firstItem="Q8D-DC-dgg" firstAttribute="top" secondItem="b9u-OY-pvf" secondAttribute="top" id="sEE-0p-OAJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zRM-Ua-kxZ"/>
+                    <navigationItem key="navigationItem" id="zRM-Ua-kxZ">
+                        <barButtonItem key="leftBarButtonItem" title="≣" id="j91-n4-iHV">
+                            <connections>
+                                <action selector="menuBarButtonItemPressed:" destination="hqH-oV-rrb" id="m73-tO-SKo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="menuBarButtonItem" destination="j91-n4-iHV" id="lD5-Zv-eom"/>
                         <outlet property="tableView" destination="Q8D-DC-dgg" id="dgc-lm-AZf"/>
                     </connections>
                 </viewController>
@@ -350,7 +357,7 @@
         <!--Add Venue View Controller-->
         <scene sceneID="zhZ-c7-38z">
             <objects>
-                <viewController storyboardIdentifier="XZZAddVenueViewControllerID" id="r7f-Gc-Hfp" customClass="XZZAddVenueViewController" sceneMemberID="viewController">
+                <viewController id="r7f-Gc-Hfp" customClass="XZZAddVenueViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uw7-IQ-aPV"/>
                         <viewControllerLayoutGuide type="bottom" id="7mV-fZ-kbh"/>
@@ -390,6 +397,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f3E-Bq-V6y">
+                        <barButtonItem key="leftBarButtonItem" title="≣" id="TLQ-gB-RQO">
+                            <connections>
+                                <action selector="menuBarButtonItemPressed:" destination="r7f-Gc-Hfp" id="RWV-42-cXN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="rPS-OU-NQh">
                             <connections>
                                 <action selector="saveBarButtonItemPressed:" destination="r7f-Gc-Hfp" id="jw9-Ki-n7f"/>
@@ -397,6 +409,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuBarButtonItem" destination="TLQ-gB-RQO" id="kFP-F2-VeA"/>
                         <outlet property="phoneNumberTextField" destination="T7P-l2-oet" id="x1n-Pb-sOt"/>
                         <outlet property="typeOfFoodTextField" destination="t88-bm-IlO" id="ksY-GM-QKK"/>
                         <outlet property="venueNameTextField" destination="NYb-J2-7tz" id="KRM-PM-43m"/>
@@ -427,7 +440,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0Ea-JW-sLx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="twK-eR-H8G" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="XZZAddVenueViewControllerID" automaticallyAdjustsScrollViewInsets="NO" id="twK-eR-H8G" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ZJ-ic-mj4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -445,7 +458,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZDZ-3i-yWb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2E3-ZL-h4b" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="XZZFavouriteVenuesViewControllerID" automaticallyAdjustsScrollViewInsets="NO" id="2E3-ZL-h4b" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2og-wv-b9m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -7,6 +7,7 @@
 //
 
 #import "XZZFavouriteVenuesViewController.h"
+#import "AppDelegate.h"
 
 @interface XZZFavouriteVenuesViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.menuBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIFont fontWithName:@"Helvetica-Bold" size:25.0], NSFontAttributeName, nil] forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +35,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender {
+    [[self drawerControllerFromAppDelegate] toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+}
+
+#pragma mark - Drawer Controller
+
+- (MMDrawerController *)drawerControllerFromAppDelegate
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.drawerController;
+}
 
 @end
