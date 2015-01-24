@@ -80,6 +80,11 @@
 		11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */; };
 		11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EC1A725EE400267E56 /* UIKit.framework */; };
 		11FB32EF1A725EED00267E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EE1A725EED00267E56 /* Foundation.framework */; };
+		11FFBF1E1A73E44E00EE1DCB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF161A73E44E00EE1DCB /* MMDrawerBarButtonItem.m */; };
+		11FFBF1F1A73E44E00EE1DCB /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF191A73E44E00EE1DCB /* MMDrawerController.m */; };
+		11FFBF201A73E44E00EE1DCB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF1B1A73E44E00EE1DCB /* MMDrawerVisualState.m */; };
+		11FFBF211A73E44E00EE1DCB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF1D1A73E44E00EE1DCB /* UIViewController+MMDrawerController.m */; };
+		11FFBF241A73E50F00EE1DCB /* XZZMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +242,17 @@
 		11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
 		11FB32EC1A725EE400267E56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11FB32EE1A725EED00267E56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11FFBF151A73E44E00EE1DCB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		11FFBF161A73E44E00EE1DCB /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		11FFBF171A73E44E00EE1DCB /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		11FFBF181A73E44E00EE1DCB /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		11FFBF191A73E44E00EE1DCB /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		11FFBF1A1A73E44E00EE1DCB /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		11FFBF1B1A73E44E00EE1DCB /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		11FFBF1C1A73E44E00EE1DCB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		11FFBF1D1A73E44E00EE1DCB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		11FFBF221A73E50F00EE1DCB /* XZZMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZMenuViewController.h; sourceTree = "<group>"; };
+		11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +303,8 @@
 				112C919A1A71352100327007 /* AppDelegate.h */,
 				112C919B1A71352100327007 /* AppDelegate.m */,
 				112C919E1A71352100327007 /* Main.storyboard */,
+				11FFBF221A73E50F00EE1DCB /* XZZMenuViewController.h */,
+				11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */,
 				112C919C1A71352100327007 /* XZZListViewController.h */,
 				112C919D1A71352100327007 /* XZZListViewController.m */,
 				112C919F1A71352100327007 /* XZZMapViewController.h */,
@@ -334,6 +352,7 @@
 		112C909D1A7134C400327007 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11FFBF141A73E44E00EE1DCB /* MMDrawerController */,
 				11E7A27E1A7265A10035C979 /* AFMMRecordResponseSerializer */,
 				11FB32EE1A725EED00267E56 /* Foundation.framework */,
 				11FB32EC1A725EE400267E56 /* UIKit.framework */,
@@ -572,6 +591,22 @@
 			path = AFMMRecordResponseSerializer;
 			sourceTree = "<group>";
 		};
+		11FFBF141A73E44E00EE1DCB /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				11FFBF151A73E44E00EE1DCB /* MMDrawerBarButtonItem.h */,
+				11FFBF161A73E44E00EE1DCB /* MMDrawerBarButtonItem.m */,
+				11FFBF171A73E44E00EE1DCB /* MMDrawerController+Subclass.h */,
+				11FFBF181A73E44E00EE1DCB /* MMDrawerController.h */,
+				11FFBF191A73E44E00EE1DCB /* MMDrawerController.m */,
+				11FFBF1A1A73E44E00EE1DCB /* MMDrawerVisualState.h */,
+				11FFBF1B1A73E44E00EE1DCB /* MMDrawerVisualState.m */,
+				11FFBF1C1A73E44E00EE1DCB /* UIViewController+MMDrawerController.h */,
+				11FFBF1D1A73E44E00EE1DCB /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -709,6 +744,7 @@
 				112C916A1A7134FB00327007 /* MagicalRecord+Options.m in Sources */,
 				112C91661A7134FB00327007 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				112C91631A7134FB00327007 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				11FFBF1E1A73E44E00EE1DCB /* MMDrawerBarButtonItem.m in Sources */,
 				111DF8221A73D0C600F184F6 /* XZZDirectionsListViewController.m in Sources */,
 				112C91881A7134FB00327007 /* MMRecordCache.m in Sources */,
 				112C91681A7134FB00327007 /* MagicalRecord+ErrorHandling.m in Sources */,
@@ -725,10 +761,14 @@
 				112C91AD1A71366000327007 /* XZZFourSquareSessionManager.m in Sources */,
 				112C91671A7134FB00327007 /* MagicalRecord+Actions.m in Sources */,
 				112C914D1A7134FB00327007 /* AFNetworkReachabilityManager.m in Sources */,
+				11FFBF241A73E50F00EE1DCB /* XZZMenuViewController.m in Sources */,
 				112C914B1A7134FB00327007 /* AFHTTPRequestOperationManager.m in Sources */,
 				112C91601A7134FB00327007 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				11FFBF201A73E44E00EE1DCB /* MMDrawerVisualState.m in Sources */,
 				112C916C1A7134FB00327007 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				112C918A1A7134FB00327007 /* MMRecordMarshaler.m in Sources */,
+				11FFBF211A73E44E00EE1DCB /* UIViewController+MMDrawerController.m in Sources */,
+				11FFBF1F1A73E44E00EE1DCB /* MMDrawerController.m in Sources */,
 				112C91891A7134FB00327007 /* MMRecordDebugger.m in Sources */,
 				112C91541A7134FB00327007 /* MagicalImportFunctions.m in Sources */,
 				111DF8161A728BF400F184F6 /* Menu.m in Sources */,
