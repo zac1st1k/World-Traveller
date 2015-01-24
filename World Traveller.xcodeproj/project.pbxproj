@@ -13,6 +13,7 @@
 		111DF8161A728BF400F184F6 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8151A728BF400F184F6 /* Menu.m */; };
 		111DF8191A728BF500F184F6 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8181A728BF500F184F6 /* Venue.m */; };
 		111DF81C1A7299EF00F184F6 /* XZZDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */; };
+		111DF8221A73D0C600F184F6 /* XZZDirectionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111DF8211A73D0C600F184F6 /* XZZDirectionsListViewController.m */; };
 		112C90771A7134AE00327007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C90761A7134AE00327007 /* main.m */; };
 		112C90851A7134AE00327007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112C90841A7134AE00327007 /* Images.xcassets */; };
 		112C90881A7134AE00327007 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112C90861A7134AE00327007 /* LaunchScreen.xib */; };
@@ -104,6 +105,8 @@
 		111DF8181A728BF500F184F6 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		111DF81A1A7299EF00F184F6 /* XZZDirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZDirectionsViewController.h; sourceTree = "<group>"; };
 		111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZDirectionsViewController.m; sourceTree = "<group>"; };
+		111DF8201A73D0C600F184F6 /* XZZDirectionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZDirectionsListViewController.h; sourceTree = "<group>"; };
+		111DF8211A73D0C600F184F6 /* XZZDirectionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZDirectionsListViewController.m; sourceTree = "<group>"; };
 		112C90711A7134AE00327007 /* World Traveller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Traveller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		112C90751A7134AE00327007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112C90761A7134AE00327007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 				112C91A01A71352100327007 /* XZZMapViewController.m */,
 				111DF81A1A7299EF00F184F6 /* XZZDirectionsViewController.h */,
 				111DF81B1A7299EF00F184F6 /* XZZDirectionsViewController.m */,
+				111DF8201A73D0C600F184F6 /* XZZDirectionsListViewController.h */,
+				111DF8211A73D0C600F184F6 /* XZZDirectionsListViewController.m */,
 				112C91AA1A71365100327007 /* API */,
 				112C91A81A71364900327007 /* Model */,
 				112C90841A7134AE00327007 /* Images.xcassets */,
@@ -704,6 +709,7 @@
 				112C916A1A7134FB00327007 /* MagicalRecord+Options.m in Sources */,
 				112C91661A7134FB00327007 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				112C91631A7134FB00327007 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				111DF8221A73D0C600F184F6 /* XZZDirectionsListViewController.m in Sources */,
 				112C91881A7134FB00327007 /* MMRecordCache.m in Sources */,
 				112C91681A7134FB00327007 /* MagicalRecord+ErrorHandling.m in Sources */,
 				112C915E1A7134FB00327007 /* NSManagedObject+MagicalRecord.m in Sources */,
@@ -848,6 +854,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "World Traveller/PrefixHeader.pch";
 				INFOPLIST_FILE = "World Traveller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -860,6 +867,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "World Traveller/PrefixHeader.pch";
 				INFOPLIST_FILE = "World Traveller/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
