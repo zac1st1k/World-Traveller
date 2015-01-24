@@ -1,5 +1,5 @@
 //
-//  XZZMenuViewController.h
+//  XZZFavouriteVenuesViewController.h
 //  World Traveller
 //
 //  Created by Zac on 25/01/2015.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZZMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface XZZFavouriteVenuesViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 

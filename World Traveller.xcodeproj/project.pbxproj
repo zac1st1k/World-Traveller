@@ -78,6 +78,7 @@
 		112C91BC1A71367100327007 /* XZZRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 112C91B01A71367100327007 /* XZZRecord.m */; };
 		11E7A2861A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */; };
 		11E7A2871A7265A10035C979 /* AFMMRecordResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */; };
+		11F974CB1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F974CA1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m */; };
 		11FB32ED1A725EE400267E56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EC1A725EE400267E56 /* UIKit.framework */; };
 		11FB32EF1A725EED00267E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB32EE1A725EED00267E56 /* Foundation.framework */; };
 		11FFBF1E1A73E44E00EE1DCB /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF161A73E44E00EE1DCB /* MMDrawerBarButtonItem.m */; };
@@ -85,6 +86,7 @@
 		11FFBF201A73E44E00EE1DCB /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF1B1A73E44E00EE1DCB /* MMDrawerVisualState.m */; };
 		11FFBF211A73E44E00EE1DCB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF1D1A73E44E00EE1DCB /* UIViewController+MMDrawerController.m */; };
 		11FFBF241A73E50F00EE1DCB /* XZZMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */; };
+		11FFBF2C1A740EE500EE1DCB /* XZZAddVenueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFBF2B1A740EE500EE1DCB /* XZZAddVenueViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +242,8 @@
 		11E7A2801A7265A10035C979 /* AFMMRecordResponseSerializationMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializationMapper.m; sourceTree = "<group>"; };
 		11E7A2811A7265A10035C979 /* AFMMRecordResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFMMRecordResponseSerializer.h; sourceTree = "<group>"; };
 		11E7A2821A7265A10035C979 /* AFMMRecordResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFMMRecordResponseSerializer.m; sourceTree = "<group>"; };
+		11F974C91A7411FE004B37F5 /* XZZFavouriteVenuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZFavouriteVenuesViewController.h; sourceTree = "<group>"; };
+		11F974CA1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZFavouriteVenuesViewController.m; sourceTree = "<group>"; };
 		11FB32EC1A725EE400267E56 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11FB32EE1A725EED00267E56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11FFBF151A73E44E00EE1DCB /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		11FFBF1D1A73E44E00EE1DCB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		11FFBF221A73E50F00EE1DCB /* XZZMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZMenuViewController.h; sourceTree = "<group>"; };
 		11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZMenuViewController.m; sourceTree = "<group>"; };
+		11FFBF2A1A740EE500EE1DCB /* XZZAddVenueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZAddVenueViewController.h; sourceTree = "<group>"; };
+		11FFBF2B1A740EE500EE1DCB /* XZZAddVenueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZAddVenueViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +309,10 @@
 				112C919A1A71352100327007 /* AppDelegate.h */,
 				112C919B1A71352100327007 /* AppDelegate.m */,
 				112C919E1A71352100327007 /* Main.storyboard */,
+				11F974C91A7411FE004B37F5 /* XZZFavouriteVenuesViewController.h */,
+				11F974CA1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m */,
+				11FFBF2A1A740EE500EE1DCB /* XZZAddVenueViewController.h */,
+				11FFBF2B1A740EE500EE1DCB /* XZZAddVenueViewController.m */,
 				11FFBF221A73E50F00EE1DCB /* XZZMenuViewController.h */,
 				11FFBF231A73E50F00EE1DCB /* XZZMenuViewController.m */,
 				112C919C1A71352100327007 /* XZZListViewController.h */,
@@ -744,6 +754,7 @@
 				112C916A1A7134FB00327007 /* MagicalRecord+Options.m in Sources */,
 				112C91661A7134FB00327007 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				112C91631A7134FB00327007 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				11F974CB1A7411FE004B37F5 /* XZZFavouriteVenuesViewController.m in Sources */,
 				11FFBF1E1A73E44E00EE1DCB /* MMDrawerBarButtonItem.m in Sources */,
 				111DF8221A73D0C600F184F6 /* XZZDirectionsListViewController.m in Sources */,
 				112C91881A7134FB00327007 /* MMRecordCache.m in Sources */,
@@ -760,6 +771,7 @@
 				112C916D1A7134FB00327007 /* MagicalRecord.m in Sources */,
 				112C91AD1A71366000327007 /* XZZFourSquareSessionManager.m in Sources */,
 				112C91671A7134FB00327007 /* MagicalRecord+Actions.m in Sources */,
+				11FFBF2C1A740EE500EE1DCB /* XZZAddVenueViewController.m in Sources */,
 				112C914D1A7134FB00327007 /* AFNetworkReachabilityManager.m in Sources */,
 				11FFBF241A73E50F00EE1DCB /* XZZMenuViewController.m in Sources */,
 				112C914B1A7134FB00327007 /* AFHTTPRequestOperationManager.m in Sources */,
