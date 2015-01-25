@@ -82,9 +82,9 @@
     else if (indexPath.row == 1) {
         cell.textLabel.text = @"Favourites";
     }
-    else if (indexPath.row == 2) {
-        cell.textLabel.text = @"Add Venue";
-    }
+//    else if (indexPath.row == 2) {
+//        cell.textLabel.text = @"Add Venue";
+//    }
     return cell;
 }
 

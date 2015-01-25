@@ -73,11 +73,11 @@
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 18)];
     /* Create custom view to display section header... */
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, tableView.frame.size.width, 18)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, tableView.frame.size.width, 18)];
     [label setFont:[UIFont boldSystemFontOfSize:12]];
     /* Section header is in 0th index... */
 //    [label setText:string];
-    [label setText:[NSString stringWithFormat:@"Route %i", (int)section + 1]];
+    [label setText:[NSString stringWithFormat:@" Route %i", (int)section + 1]];
     [view addSubview:label];
     label.backgroundColor = [UIColor colorWithRed:247/255.0f green:247/255.0f blue:247/255.0f alpha:1.0f];
     return view;
@@ -98,7 +98,7 @@
     region.span.latitudeDelta = 0.001;
     region.span.longitudeDelta = 0.001;
     options.region = region;
-    options.size = CGSizeMake(40.0, 40.0);
+    options.size = CGSizeMake(35.0, 35.0);
     MKMapSnapshotter *snapshotter = [[MKMapSnapshotter alloc] initWithOptions:options];
     [snapshotter startWithCompletionHandler:^(MKMapSnapshot *snapshot, NSError *error) {
         if (error) {

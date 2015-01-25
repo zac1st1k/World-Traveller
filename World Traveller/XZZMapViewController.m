@@ -50,7 +50,6 @@
         XZZDirectionsViewController *directionsVC = segue.destinationViewController;
         directionsVC.venue = self.venue;
     }
-    
 }
 
 - (IBAction)showDirectionsBarButtonItemPressed:(UIBarButtonItem *)sender {
@@ -63,4 +62,5 @@
         self.starLabel.text = @"★";
     }];
 }
+
 @end

@@ -88,20 +88,35 @@
 
 - (void)showRoute:(MKDirectionsResponse *)response
 {
-    self.steps = response.routes;
-    for (MKRoute *route in self.steps) {
+//    self.steps = response.routes;
+//    for (MKRoute *route in self.steps) {
 //        for (MKRouteStep *step in route.steps) {
 //            NSLog(@"Step instructions: %@", step.instructions);
 //        }
-        [self.directionsMapVIew addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+//        [self.directionsMapVIew addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+//    }
+    self.steps = response.routes;
+    NSLog(@"route count is %i", (unsigned int)[response.routes count]);
+    for (self.i = (int)[response.routes count] - 1; self.i >= 0; self.i --) {
+        NSLog(@"i is %i", self.i);
+        MKRoute *route = self.steps[self.i];
+        for (MKRouteStep *step in route.steps) {
+            [self.directionsMapVIew addOverlay:step.polyline level:MKOverlayLevelAboveRoads];
+            NSLog(@"this is step %@", step);
+        }
     }
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
     MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-    renderer.strokeColor = [UIColor redColor];
-    renderer.lineWidth = 3.0;
+    if (self.i == 0)
+        renderer.strokeColor = [UIColor redColor];
+    else if (self.i == 1)
+        renderer.strokeColor = [UIColor blueColor];
+    else if (self.i == 2)
+        renderer.strokeColor = [UIColor greenColor];
+    renderer.lineWidth = 5.0;
     return renderer;
 }
 

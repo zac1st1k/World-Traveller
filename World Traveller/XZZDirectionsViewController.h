@@ -18,6 +18,7 @@
 @property (strong, nonatomic) Venue *venue;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSArray *steps;
+@property (nonatomic) int i;
 
 - (IBAction)listDirectionsBarButtonPressed:(UIBarButtonItem *)sender;
 
