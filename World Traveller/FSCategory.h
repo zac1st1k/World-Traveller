@@ -2,17 +2,16 @@
 //  FSCategory.h
 //  World Traveller
 //
-//  Created by Zac on 24/01/2015.
+//  Created by Zac on 26/01/2015.
 //  Copyright (c) 2015 1st1k. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "XZZRecord.h"
 
 @class Venue;
 
-@interface FSCategory : XZZRecord
+@interface FSCategory : NSManagedObject
 
 @property (nonatomic, retain) NSString * id;
 @property (nonatomic, retain) NSString * name;

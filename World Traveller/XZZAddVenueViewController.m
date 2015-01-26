@@ -7,7 +7,10 @@
 //
 
 #import "XZZAddVenueViewController.h"
-#include "AppDelegate.h"
+#import "AppDelegate.h"
+#import "Venue.h"
+#import "FSCategory.h"
+#import "Contact.h"
 
 @interface XZZAddVenueViewController ()
 
@@ -37,6 +40,22 @@
 */
 
 - (IBAction)saveBarButtonItemPressed:(UIBarButtonItem *)sender {
+    if ([self.venueNameTextField.text isEqualToString:@""]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Blank Field" message:@"Please Enter a Venue Name" delegate:nil cancelButtonTitle:@"OK!" otherButtonTitles:nil];
+        [alertView show];
+    }
+    else {
+        Venue *venue = [Venue MR_createEntity];
+        venue.name = self.venueNameTextField.text;
+        Contact *contact = [Contact MR_createEntity];
+        contact.phone = self.phoneNumberTextField.text;
+        venue.contact = contact;
+        FSCategory *category = [FSCategory MR_createEntity];
+        category.name = self.typeOfFoodTextField.text;
+        venue.categories = category;
+        venue.favourite = [NSNumber numberWithBool:YES];
+        [[NSManagedObjectContext MR_defaultContext] MR_saveOnlySelfAndWait];
+    }
 }
 
 - (IBAction)menuBarButtonItemPressed:(UIBarButtonItem *)sender {
